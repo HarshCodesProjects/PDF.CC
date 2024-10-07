@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.CC</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">PDF.CC</h1>
+
+        <!-- File Upload Input -->
+        <input type="file" id="uploadPDF" accept="application/pdf" />
+
+        <!-- Filter Buttons will be generated here dynamically -->
+        <div id="filterContainer" class="filter-container"></div>
+
+        <!-- PDF Pages will be rendered here -->
+        <div id="canvasContainer" class="canvas-container"></div>
+
+        <!-- Button to download the modified PDF -->
+        <div class="button-container">
+            <button id="download">Download PDF</button>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script> <!-- Your updated JavaScript file -->
+</body>
+</html>
